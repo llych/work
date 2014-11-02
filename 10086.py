@@ -43,7 +43,8 @@ else:
 
 
     num='15815165532'
-    passwd='xxx'
+    #num='15915485709'
+    passwd='60560431'
     postdata={
     'backURL':'null',
     'imageCode':code,
