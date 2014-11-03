@@ -26,7 +26,7 @@ s.cookies=cookies
 # print requests.utils.dict_from_cookiejar(s.cookies)
 html=s.get('http://wap.gd.10086.cn/nwap/personal/personal/queryFlow.jsps#').content
 if 'fr tBlue'  in html:
-    print u'读取cookies 登录成功'
+    print u'璇诲彇cookies 鐧诲綍鎴愬姛'
 # print html
     for i in re.findall('<div>(.*?)<span class="fr tBlue">(.*?)</span>',html):
         print ' '.join(i).decode('UTF-8')
@@ -44,7 +44,7 @@ else:
 
     num='15815165532'
     #num='15915485709'
-    passwd='60560431'
+    passwd='xxxxxxx'
     postdata={
     'backURL':'null',
     'imageCode':code,
@@ -57,12 +57,12 @@ else:
 
     }
     if 'success' in s.post(url,data=postdata).content:
-        print u'登录成功'
+        print u'鐧诲綍鎴愬姛'
         cookie.update(requests.utils.dict_from_cookiejar(s.cookies))
         cookie.close()
         html=s.get('http://wap.gd.10086.cn/nwap/personal/personal/queryFlow.jsps#').content
         if 'fr tBlue'  in html:
-            # print '读取cookies 登录成功'
+            # print '璇诲彇cookies 鐧诲綍鎴愬姛'
         # print html
             for i in re.findall('<div>(.*?)<span class="fr tBlue">(.*?)</span>',html):
                 print ' '.join(i).decode('UTF-8')
