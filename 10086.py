@@ -19,7 +19,7 @@ url='http://wap.gd.10086.cn/nwap/login/login.jsps?'
 imgCheckCodeUrl='http://wap.gd.10086.cn/nwap/login/wapImageCheckCode/read.jsps?0.46336756048440586'
 s=requests.Session()
 s.cookies=cookies
-
+ 
 
 
 # print s.cookies
